@@ -1,1 +1,3 @@
-123
+Nuestros clusters en AZURE "viven" en diferente VLAN.
+
+
