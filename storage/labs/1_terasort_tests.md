@@ -14,7 +14,7 @@ drwxrwxr-x   - hue        hue                 0 2017-11-27 21:17 /user/hue<br>
 drwxr-xr-x   - lotnavarro supergroup          0 2017-11-28 11:10 /user/lotnavarro<br>
 drwxrwxr-x   - oozie      oozie               0 2017-11-27 21:18 /user/oozie<br>
 <br>
-<b>Create a 10 GB file using teragen</b><br>
+<b><h2>Create a 10 GB file using teragen</h2></b><br>
 <code>
 [raken@cdh1 ~]$ HADOOP_USER_NAME=lotnavarro time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar teragen 100000000 /user/lotnavarro/teragen_lot</code><br>
 17/11/28 11:32:37 INFO client.RMProxy: Connecting to ResourceManager at cdh2.northcentralus.cloudapp.azure.com/10.0.1.6:8032<br>
@@ -111,11 +111,12 @@ Found 2 items<br>
 drwx------   - lotnavarro supergroup          0 2017-11-28 11:34 /user/lotnavarro/.staging<br>
 drwxr-xr-x   - lotnavarro supergroup          0 2017-11-28 11:34 /user/lotnavarro/teragen_lot<br>
 [raken@cdh1 ~]$ <br>
-<b>Create a 10 GB file using terasort</b><br>
+<br>
+<b><h2>Create a 10 GB file using terasort</h2></b><br>
 
 [raken@cdh1 ~]$ HADOOP_USER_NAME=lotnavarro time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-0.20-mapreduce/hadoop-examples.jar terasort /user/lotnavarro/teragen_lot /user/lotnavarro/terasort-lot<br>
 17/11/28 11:44:43 INFO terasort.TeraSort: starting<br>
-17/11/28 11:44:45 INFO input.FileInputFormat: Total input paths to process : 2
+17/11/28 11:44:45 INFO input.FileInputFormat: Total input paths to process : 2<br>
 Spent 164ms computing base-splits.
 Spent 3ms computing TeraScheduler splits.
 Computing input splits took 168ms
