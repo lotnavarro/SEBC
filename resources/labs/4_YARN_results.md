@@ -38,6 +38,9 @@ Testing loop ended on Tue Nov 28 16:13:31 EST 2017<br>
 [raken@cdh1 ~]$ <br>
 
 <b><h2>Second run: YARNtest.sh</h2></b><br>
+*MAP_MB=`echo "($k*0.6)/1" | bc`*<br>
+*RED_MB=`echo "($k*0.8)/1" | bc`*<br>
+
 <code>
 [raken@cdh1 ~]$ HADOOP_USER_NAME=lotnavarro ./YARNtest.sh</code><br>
 <br>
