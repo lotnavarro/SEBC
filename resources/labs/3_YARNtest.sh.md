@@ -21,7 +21,11 @@ do
 
          # Set reducer JVM heap 
          RED_MB=`echo "($k*0.8)/1" | bc` 
-
+echo 'Mapper Containers: '$i
+echo 'Reducer Containers: '$j
+echo 'Container memory: '$k
+echo 'Mapper JVM: '$MAP_MB
+echo 'Reducer JVM: '$RED_MB
         time ${HADOOP}/hadoop jar ${MR}/hadoop-examples.jar teragen \
                      -Dmapreduce.job.maps=$i \
                      -Dmapreduce.map.memory.mb=$k \
@@ -38,7 +42,7 @@ do
 	             /user/lotnavarro/results/tg-10GB-${i}-${j}-${k}  \
                      /user/lotnavarro/results/ts-10GB-${i}-${j}-${k} 1>>tera_${i}_${j}_${k}.out 2>>tera_${i}_${j}_${k}.err                         
 
-        $HADOOP/hadoop fs -rm -r -skipTrash /user/lotnavarro/results/tg-10GB-${i}-${j}-${k}                         
+        $HADOOP/hadoop fs -rm -r -skipTrash /user/lotnavarro/results/tg-10GB-${i}-${j}-${k}                        
         $HADOOP/hadoop fs -rm -r -skipTrash /user/lotnavarro/results/ts-10GB-${i}-${j}-${k}                 
       done
    done
