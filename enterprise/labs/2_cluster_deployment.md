@@ -183,7 +183,7 @@
       "displayName" : "ZooKeeper"<br>
     }, {<br>
       "name" : "hue",<br>
-     ´´´
+     '''
  "type" : "HUE",
       "config" : {
         "roleTypeConfigs" : [ {
