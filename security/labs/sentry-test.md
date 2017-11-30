@@ -5,7 +5,7 @@
 
 
 <code>
-[raken@cdh4 ~]$ beeline</b><br> 
+[raken@cdh4 ~]$ beeline</b><br> </code>
 <b>Beeline version 1.1.0-cdh5.9.1 by Apache Hive<br> 
 beeline> !connect jdbc:hive2://localhost:10000/default;principal=hive/cdh4.northcentralus.cloudapp.azure.com@RAKENCDH.COM<br> 
 scan complete in 2ms<br> 
