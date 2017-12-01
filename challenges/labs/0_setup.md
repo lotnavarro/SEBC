@@ -138,11 +138,11 @@ Last login: Fri Dec  1 09:58:48 2017 from 192.55.49.238<br>
 List the /etc/passwd entries for saturn and haley</b><br>
 
 [root@rkn1 raken]# <code>cat /etc/passwd |grep 'haley' </code><br>
-haley:x:2900:2901::/home/haley:/bin/bash<br>
+haley: x :2900:2901::/home/haley:/bin/bash<br>
 [root@rkn1 raken]# <br>
 
 [root@rkn1 raken]# <code>cat /etc/passwd |grep 'saturn' </code><br>
-saturn:x:2800:2902::/home/saturn:/bin/bash<br>
+saturn: x :2800:2902::/home/saturn:/bin/bash<br>
 [root@rkn1 raken]# <br>
 
 <b>8</b><br>
@@ -150,11 +150,11 @@ saturn:x:2800:2902::/home/saturn:/bin/bash<br>
 
 List the /etc/group entries for comets and planets</b><br>
 [root@rkn1 raken]# <code>cat /etc/passwd |grep 'haley' </code><br>
-haley:x:2900:2901::/home/haley:/bin/bash<br>
+haley: x :2900:2901::/home/haley:/bin/bash<br>
 [root@rkn1 raken]# <br>
 
 [root@rkn1 raken]#<code>  cat /etc/passwd |grep 'saturn' </code><br>
-saturn:x:2800:2902::/home/saturn:/bin/bash<br>
+saturn: x :2800:2902::/home/saturn:/bin/bash<br>
 
 
 
