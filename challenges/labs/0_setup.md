@@ -4,11 +4,14 @@
 
 <br>
 <b>1</b><br>
-List the cloud provider you are using (AWS, GCE, Azure, CloudCat, other)<br>
+<b>List the cloud provider you are using (AWS, GCE, Azure, CloudCat, other)</b><br>
 <b>
-Microsoft Azure<br>
+Microsoft Azure</b><br>
 <code>https://portal.azure.com/#resource/subscriptions/b335b92c-330e-4c52-b013-3fb701403517/resourceGroups/lotnavarro/overview</code><br>
 </b>
+<br>
+<b>2</b><br>
+
 List your instances by IP address and DNS name (don't use /etc/hosts for this)<br>
 <code>
 [root@rkn1 raken]# cat /etc/hosts</code><br>
@@ -54,9 +57,10 @@ rtt min/avg/max/mdev = 0.678/3.258/8.362/3.609 ms<br>
 [root@rkn1 raken]# <br>
 <br>
 
+<br>
+<b>3</b><br>
 
-
-List the Linux release you are using<br>
+<b>List the Linux release you are using</b><br>
 <code>[root@rkn1 raken]# cat /etc/*release</code><br>
 Oracle Linux Server release 7.3<br>
 NAME="Oracle Linux Server"<br>
@@ -79,16 +83,40 @@ ORACLE_SUPPORT_PRODUCT_VERSION=7.3<br>
 
 
 
+<br>
+<b>4</b><br>
 
 
-
-List the file system capacity for the first node<br>
+<b>List the file system capacity for the first node</b><br>
 <code>
+[root@rkn1 raken]# df -h
+</code><br>
 
-</code>
+Filesystem      Size  Used Avail Use% Mounted on<br>
+devtmpfs         16G     0   16G   0% /dev<br>
+tmpfs            16G     0   16G   0% /dev/shm<br>
+tmpfs            16G  8.3M   16G   1% /run<br>
+tmpfs            16G     0   16G   0% /sys/fs/cgroup<br>
+/dev/sda2        30G  1.8G   26G   7% /<br>
+/dev/sda1       497M  112M  386M  23% /boot<br>
+/dev/sdb1       197G  2.1G  185G   2% /mnt/resource<br>
+tmpfs           3.2G     0  3.2G   0% /run/user/1000<br>
+[root@rkn1 raken]# <br>
 
-List the command and output for yum repolist enabled<br>
+<br>
+<b>5</b><br>
+
+<b>List the command and output for yum repolist enabled</b>
 <code>
+[root@rkn1 raken]# yum repolist enabled</code><br>
+Loaded plugins: ulninfo<br>
+repo id            repo name                                        status<br>
+!ol7_UEKR4/x86_64  Latest Unbreakable Enterprise Kernel Release 4 f      394+105<br>
+!ol7_addons/x86_64 Oracle Linux 7Server Add ons (x86_64)                  172+77<br>
+!ol7_latest/x86_64 Oracle Linux 7Server Latest (x86_64)             18,018+5,194<br>
+repolist: 18,584<br>
+[root@rkn1 raken]# <br>
 
-</code>
+
+
 
