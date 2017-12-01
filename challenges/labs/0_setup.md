@@ -1,6 +1,6 @@
-<h1>
+<h1>CLOUDERA BOOT CAMP - Challenges - Dec 1, 2017 - CDMX</h1>
 
-<h2>
+<h2>Challenge Setup</h2>
 
 <br>
 <b>1</b><br>
