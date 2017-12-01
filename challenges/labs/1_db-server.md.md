@@ -8,7 +8,7 @@
 <br>
 mysql> exit<br>
 Bye<br>
-[root@sserverln raken]# <code>hostname>/code> <br>
+[root@sserverln raken]# <code>hostname></code> <br>
 sserverln<br>
 [root@sserverln raken]# <br>
  
