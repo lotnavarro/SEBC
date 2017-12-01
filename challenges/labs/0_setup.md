@@ -11,8 +11,8 @@ Microsoft Azure</b><br>
 </b>
 <br>
 <b>2</b><br>
-
-List your instances by IP address and DNS name (don't use /etc/hosts for this)<br>
+<b>
+List your instances by IP address and DNS name (don't use /etc/hosts for this)</b><br>
 <code>
 [root@rkn1 raken]# cat /etc/hosts</code><br>
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4<br>
