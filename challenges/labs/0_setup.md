@@ -116,6 +116,27 @@ repo id            repo name                                        status<br>
 !ol7_latest/x86_64 Oracle Linux 7Server Latest (x86_64)             18,018+5,194<br>
 repolist: 18,584<br>
 [root@rkn1 raken]# <br>
+<br>
+<b>6</b><br>
+<b>Add the following Linux accounts to all nodes</b><br>
+
+raken@rkn4.northcentralus.cloudapp.azure.com's password:<br> 
+Last login: Fri Dec  1 09:58:48 2017 from 192.55.49.238<br>
+[raken@rkn4 ~]$ <code>sudo su</code><br>
+[root@rkn4 raken]# <code>useradd -u 2800 saturn</code><br>
+[root@rkn4 raken]# <code>useradd -u 2900 haley</code><br>
+[root@rkn4 raken]# <br>
+[root@rkn2 raken]# <code>groupadd comets</code><br>
+[root@rkn2 raken]# <code>groupadd planets</code><br>
+[root@rkn2 raken]# <code>usermod -g comets haley</code><br>
+[root@rkn2 raken]# <code>usermod -g planets saturn</code><br>
+[root@rkn2 raken]# <br>
+<br>
+<b>7</b><br>
+<b>
+
+List the /etc/passwd entries for saturn and haley</b><br>
+
 
 
 
